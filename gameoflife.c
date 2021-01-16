@@ -4,13 +4,19 @@
 
 int main(int argc, char *argv[]){
 
-        int size = atoi(argv[1]);
+        int sizeX = atoi(argv[1]);
+        int sizeY = atoi(argv[2]);
 
-        char board[size][size];
 
-        for (int i = 0; i < size; i++){
-                for (int j = 0; j < size; j++){
-                        printf("1");
+        char board[sizeX][sizeY];
+
+        for (int i = 0; i < sizeX; i++){
+                for (int j = 0; j < sizeY; j++){
+                        if (i == 0 || j == 0 || j == sizeY - 1 || i == sizeX - 1){
+                                printf("# ");
+                        } else {
+                                printf(" ");
+                        }
                 }
                 printf("\n");
         }
