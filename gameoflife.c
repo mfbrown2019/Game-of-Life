@@ -9,7 +9,6 @@ int main(int argc, char *argv[]){
 
         printf("%d %d\n", sizeX, sizeY);
 
-
         char board[sizeX][sizeY];
 
         for (int i = 0; i < sizeX; i++){
