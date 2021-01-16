@@ -12,7 +12,7 @@ int main(int argc, char *argv[]){
 
         for (int i = 0; i < sizeX; i++){
                 for (int j = 0; j < sizeY; j++){
-                        if (i == 0 || j == 0 || j == sizeY - 1 || i == sizeX - 1){
+                        if (i == 0 || j == 0 || (j == sizeY - 1) || (i == sizeX - 1)){
                                 printf("# ");
                         } else {
                                 printf(" ");
